@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pictionary generator</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+<img src="pic.jfif" class="img-fluid" alt="Responsive image"  width ="200" height ="200" style="border:5px solid black">
+
+<button type="button" class="btn btn-outline-primary"  id="easy">Easy</button>
+<button type="button" class="btn btn-outline-success"  id="medium">Medium</button>
+<button type="button" class="btn btn-outline-info"  id="hard">Hard</button>
+
+
+<h1>Get ready to draw ...... <span id="myText"></span></h1>
+
+<script type="text/javascript">
+	
+document.getElementById("easy").addEventListener("click", Easy);
+document.getElementById("medium").addEventListener("click", Medium);
+document.getElementById("hard").addEventListener("click", Hard);
+
+
+function Easy()
+{
+	var easy =[" Angel "," Eyeball "," Pizza "," Angry "," Fireworks "," Pumpkin "," Baby "," Flower "," Rainbow "," Beard "," Flying saucer "," Recycle "," Bible "," Giraffe "," Sand castle "," Bikini "," Glasses "," Snowflake "," Book "," High heel "," Stairs "," Bucket "," Ice cream cone "," Starfish "," Bumble bee "," Igloo "," Strawberry "," Butterfly "," Lady bug "," Sun "," Camera "," Lamp "," Tire "," Cat "," Lion "," Toast "," Church "," Mailbox "," Toothbrush "," Crayon "," Night "," Toothpaste "," Dolphin "," Nose "," Truck "," Egg "," Olympics"," Volleyball "," Eiffel Tower"];
+	randno = Math.floor(Math.random() * easy.length);
+  // document.write(easy[randno]);
+  document.getElementById("myText").innerHTML = easy[randno];
+}
+function Medium()
+{
+	var medium =[" Abraham Lincoln "," Kiss "," Pigtails "," Brain "," Kitten "," Playground "," Bubble bath "," Kiwi "," Pumpkin pie "," Buckle "," Lipstick "," Raindrop "," Bus "," Lobster "," Robot "," Car accident "," Lollipop "," Sand castle "," Castle "," Magnet "," Slipper "," Chain saw "," Megaphone "," Snowball "," Circus tent "," Mermaid "," Sprinkler "," Computer "," Minivan "," Crib "," Mount Rushmore "," Tadpole "," Dragon "," Music "," Teepee "," Dumbbell "," North pole "," Telescope "," Eel "," Nurse "," Train "," Ferris wheel "," Owl "," Tricycle "," Flag "," Pacifier "," Tutu "," Junk mail "];
+	randno = Math.floor(Math.random() * medium.length);
+ // document.write(medium[randno]);
+ document.getElementById("myText").innerHTML = medium[randno];
+
+
+}
+function Hard()
+{
+	var hard =[" Attic "," Glue "," Pocket watch "," Back seat "," Highchair "," Rock band "," Birthday "," Hockey "," Sasquatch "," Black hole "," Hotel "," Scrambled eggs "," Blizzard "," Jump rope "," Seat belt "," Burrito "," Koala "," Skip "," Captain "," Leprechaun "," Solar eclipse "," Chandelier "," Light "," Space "," Crib "," Mask "," Stethoscope "," Cruise ship "," Mechanic "," Stork "," Dance "," Mom "," Sunburn "," Deodorant "," Mr Potato Head "," Thread "," Facebook "," Pantyhose "," Tourist "," Flat "," Paper plate "," United States "," Frame "," Photo "," WiFi "," Full moon "," Zombie "," Game "," Pirate "];
+	randno = Math.floor(Math.random() * hard.length);
+  // document.write(hard[randno]);
+  document.getElementById("myText").innerHTML = hard[randno];
+}
+</script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>
